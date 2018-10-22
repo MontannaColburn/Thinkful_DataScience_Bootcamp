@@ -1,0 +1,6 @@
+SELECT
+    trip_id,
+	MIN(duration)
+FROM
+    trips
+GROUP by trip_id;
