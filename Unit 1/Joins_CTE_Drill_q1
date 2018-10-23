@@ -1,0 +1,21 @@
+WITH
+    rainy_days
+AS (
+	SELECT
+    	w.zip
+	FROM
+    	weather w
+	WHERE 
+		precipitationin > 0
+	GROUP BY 1) 
+SELECT
+	t.trip_id,
+	t.duration
+FROM 
+	trips t 
+JOIN
+    rainy_days r  
+ON
+    t.zip_code = r.zip
+ORDER BY duration DESC
+LIMIT 3; 
