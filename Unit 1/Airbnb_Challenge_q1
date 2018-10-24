@@ -1,6 +1,0 @@
-SELECT 
-	*
-FROM 
-	listings l 
-ORDER BY l.price DESC
--- Most expensive listing is for $9,000 located in Nob Hill rented out by host Randy with a 30 night minimum stay available 89 nights throughout the year. 
