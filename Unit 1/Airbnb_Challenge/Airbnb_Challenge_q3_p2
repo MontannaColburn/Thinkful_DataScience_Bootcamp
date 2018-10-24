@@ -1,0 +1,8 @@
+SELECT 
+	dates,
+	COUNT(CASE WHEN available= 'f' then 1 END) empty_count
+FROM 
+	calendar
+GROUP BY 1
+ORDER BY empty_count DESC
+-- October is the busiest month, November coming in Second 

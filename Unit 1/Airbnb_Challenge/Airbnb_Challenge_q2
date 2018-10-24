@@ -1,0 +1,9 @@
+SELECT 
+	neighbourhood,
+	COUNT (*)
+FROM 
+	listings 
+GROUP BY 1
+ORDER BY COUNT(*) DESC
+-- Mission (704), Western Addition(526), South of Market(516), Downtown/Civic Center(470), Castro/Upper Market(398)
+	

@@ -1,0 +1,8 @@
+SELECT 
+	c.dates,
+	AVG(c.price) average_price
+FROM 
+	calendar c
+GROUP BY 1
+ORDER BY average_price ASC
+-- January is most certainly the cheapest month to visit, however, parts of February and March/April are close as well. 
